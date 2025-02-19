@@ -62,7 +62,6 @@ with torch.no_grad():
     auc = roc_auc_score(y_test, prob,multi_class='ovr', average='micro')
     print(f"Test ROC-AUC: {auc:.4f}")
 
-# 6. 可视化训练过程（可选）
 plt.figure(figsize=(12, 4))
 plt.subplot(1, 2, 1)
 plt.plot(train_loss)
